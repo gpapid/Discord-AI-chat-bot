@@ -3,10 +3,20 @@ const { REST, Routes, ApplicationCommandOptionType } = require('discord.js');
 require('dotenv').config();
 //Slash commands
 const commands = [
-  //ping command
+  //treat command
   {
-    name: 'ping',
-    description: 'Responds with pong',
+    name: 'treat',
+    description: 'Give Json a treat',
+  },
+  //pet command
+  {
+    name: 'pet',
+    description: 'Give Json a pet',
+  },
+  //Woof mode command
+  {
+    name: 'woof',
+    description: 'Dog mode'
   },
   //mention mode command
   {
@@ -34,7 +44,7 @@ const commands = [
   },
   //dall-e image generation command
   {
-    name: 'generate-image',
+    name: 'imagine',
     description: 'Provide a prompt to generate a picture',
     options: [
       {
@@ -47,7 +57,7 @@ const commands = [
   },
   //dall-e image edit/variation
   {
-    name: 'modify-avatar',
+    name: 'reimagine',
     description: 'Change up your avatar picture',
     options: [
       {
